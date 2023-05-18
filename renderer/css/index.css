@@ -1,0 +1,54 @@
+.body {
+    min-width: 900px;
+}
+
+#cabecera {
+    background-color: #2a004e;
+    color: white;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cabecera>h1 {
+    font-size: 60px;
+}
+
+#indexBody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+#indexBody>div {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#indexBody>div>div {
+    width: 40%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#indexBody>div>div>h3 {
+    width: 100%;
+    text-align: center;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#indexBody>div>div>p {
+    width: 85%;
+    text-align: justify;
+}

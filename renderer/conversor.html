@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/conversor.css" />
+    <script src="js/script.js" defer></script>
+    <script type="module" src="js/scriptConversor.js" defer></script>
+    <title>HTML Conversor</title>
+</head>
+
+<body class="body">
+    <div id="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul id="ulMenu">
+        <h1 id="titulo">
+            <a href="index.html">HTML Conversor</a>
+        </h1>
+        <li><a href="index.html">Inicio</a></li>
+        <li class="active"><a href="conversor.html">Conversor</a></li>
+        <li><a href="conversorLive.html">Live</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <div id="cargando">
+        <div class="pelotas"></div>
+        <div class="pelotas"></div>
+        <div class="pelotas"></div>
+    </div>
+    <div class="conversorBody">
+        <div>
+            <label class="imagen">
+              <img id="imagen" src="./images/ejemploWeb.png"/>
+              <span class="descripcion">Selecciona una imagen png / jpeg</span>
+              <input id="img" type="file" class="hidden" />
+            </label>
+            <button type="submit" class="botonSubmit" id="botonImg" disabled style="opacity: 0.2;">
+                Detectar
+            </button>
+            <label class="imagen">
+                <img id="imagenResultado" src="./images/ejemploWebResult.png"/>
+                <span class="descripcion">Elementos detectados</span>
+            </label>
+        </div>
+        <div id="htmlDiv">
+            <script>
+                function resultado() {
+                    var if1 = document.getElementById("if1");
+                    var if2 = document.getElementById("if2");
+                    var s1 = document.getElementById("s1");
+                    var s2 = document.getElementById("s2");
+
+                    if1.style.display = "none";
+                    if2.style.display = "unset";
+                    s1.style.opacity = "0.5";
+                    s2.style.opacity = "1";
+                }
+
+                function codigo() {
+                    var if1 = document.getElementById("if1");
+                    var if2 = document.getElementById("if2");
+                    var s1 = document.getElementById("s1");
+                    var s2 = document.getElementById("s2");
+
+                    if2.style.display = "none";
+                    if1.style.display = "unset";
+                    s2.style.opacity = "0.5";
+                    s1.style.opacity = "1";
+                }
+            </script>
+            <h2>HTML Generado</h2>
+            <button type="submit" class="botonSubmit" id="botonGuardar" disabled style="opacity: 0.2; position: absolute; right: 50px; top: 40px;">
+                GUARDAR
+            </button>
+            <div id="navbar">
+                <span onclick="codigo();" id="s1">
+                    Código
+                </span>
+                <span onclick="resultado();" id="s2" style="opacity: 0.5;">
+                    Resultado
+                </span>
+            </div>
+            <div id="iframes">
+                <iframe id="if1" width="100%" height="100%" style="visibility:visible; border: none;" src="../assets/pythonFiles/webHTML/web.txt"></iframe>
+                <iframe id="if2" width="100%" height="100%" style="visibility:visible; display: none; border: 1px solid #000000 ;" src="../assets/pythonFiles/webHTML/web.html"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

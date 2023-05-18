@@ -1,0 +1,141 @@
+.imagen {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    text-align: center;
+    align-items: center;
+}
+
+.imagen>img {
+    height: 400px;
+    width: 280px;
+    cursor: pointer;
+    object-fit: contain;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 10px;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+.imagen>span {
+    background-color: #17002c;
+    border-radius: 20px;
+    padding: 10px;
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: #ffffff;
+}
+
+.imagen>input {
+    display: none;
+}
+
+.conversorBody>div {
+    border: 1px solid #000000;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    min-width: 900px;
+}
+
+.botonSubmit {
+    background-color: #17002c;
+    color: #ffffff;
+    border-radius: 9999px;
+    padding: 10px;
+    transition-duration: 0.5s;
+    height: 40px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.botonSubmit:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+}
+
+#imagenResultado {
+    height: 400px;
+    width: 280px;
+    cursor: unset;
+    object-fit: contain;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 10px;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+#htmlDiv {
+    height: 900px;
+    position: relative;
+    bottom: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#htmlDiv>#navbar {
+    height: 40px;
+    display: flex;
+}
+
+#htmlDiv>#navbar>span {
+    background-color: #17002c;
+    color: #ffffff;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: #ffffff 1px solid;
+    width: 100px;
+    text-align: center;
+}
+
+#htmlDiv>#iframes {
+    height: 100%;
+}
+
+
+/* ----- CARGANDO ------ */
+
+#cargando {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 44%;
+    z-index: 100;
+    display: none;
+}
+
+.pelotas {
+    width: 30px;
+    height: 30px;
+    background-color: #17002c;
+    animation: salto .5s alternate infinite;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+}
+
+.pelotas:nth-child(2) {
+    animation-delay: .18s;
+}
+
+.pelotas:nth-child(3) {
+    animation-delay: .37s;
+}
+
+@keyframes salto {
+    from {
+        transform: scaleX(1.25);
+    }
+    to {
+        transform: translateY(-50px) scaleX(1);
+    }
+}
