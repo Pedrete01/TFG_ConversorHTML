@@ -1,0 +1,19 @@
+{
+    "name": "desktopappconversor",
+    "productName": "HTML Conversor",
+    "version": "1.0.0",
+    "description": "App to get HTML code from a png/jpeg file.",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "author": "Pedro Abad Valero",
+    "license": "ISC",
+    "dependencies": {
+        "electron": "^23.1.1",
+        "file-saver": "^2.0.5",
+        "jszip": "^3.10.1",
+        "request-promise": "^4.2.6",
+        "toastify-js": "^1.12.0"
+    }
+}
