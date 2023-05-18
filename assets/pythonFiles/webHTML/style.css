@@ -23,7 +23,6 @@ body {
 
 .imagen {
     width: 400px;
-    margin: 10px;
 }
 
 .texto {
@@ -35,6 +34,5 @@ body {
 .contenedor {
     display: flex;
 }
-
 
 /*--- Menu ---*/
