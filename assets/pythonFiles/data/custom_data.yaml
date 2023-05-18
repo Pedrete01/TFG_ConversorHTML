@@ -1,0 +1,23 @@
+train: ../train_data/images/train  # train images (relative to 'path') 128 images
+val: ../train_data/images/val  # val images (relative to 'path') 128 images
+
+
+nc: 16
+# Classes
+names:
+  0: boton
+  1: formulario
+  2: menu
+  3: etiqueta
+  4: radio button
+  5: check button
+  6: paginación
+  7: desplegable
+  8: icono
+  9: lista
+  10: imagen
+  11: texto
+  12: video
+  13: footer
+  14: logo
+  15: url
